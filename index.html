@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恒信建筑资质 - 专业建筑资质代办咨询</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        /* 导航栏 */
+        header {
+            background-color: #0f3460;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #53a8b6;
+        }
+        /* 横幅 */
+        .banner {
+            background: linear-gradient(rgba(15, 52, 96, 0.85), rgba(15, 52, 96, 0.85)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 10rem 5%;
+        }
+        .banner h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+        }
+        .banner p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: #53a8b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background-color: #3d8c99;
+            transform: translateY(-2px);
+        }
+        /* 业务板块 */
+        .services {
+            padding: 6rem 5%;
+            background-color: white;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3.5rem;
+            color: #0f3460;
+            font-weight: 700;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .service-item {
+            background-color: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .service-item h3 {
+            color: #0f3460;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .service-item p {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        /* 关于我们 */
+        .about {
+            padding: 6rem 5%;
+            background-color: #0f3460;
+            color: white;
+            text-align: center;
+        }
+        .about .section-title {
+            color: white;
+        }
+        .about p {
+            max-width: 950px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            opacity: 0.9;
+        }
+        /* 联系我们 */
+        .contact {
+            padding: 6rem 5%;
+            background-color: white;
+            text-align: center;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            margin-top: 2.5rem;
+        }
+        .contact-item {
+            text-align: center;
+        }
+        .contact-item h3 {
+            color: #0f3460;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .contact-item p {
+            color: #475569;
+            font-size: 1rem;
+        }
+        .qrcode-placeholder {
+            width: 110px;
+            height: 110px;
+            background-color: #e2e8f0;
+            border-radius: 8px;
+            margin: 1rem auto 0;
+        }
+        /* 页脚 */
+        footer {
+            background-color: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 5%;
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            .banner h1 {
+                font-size: 2rem;
+            }
+            .banner p {
+                font-size: 1.1rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">恒信建筑资质</div>
+        <nav>
+            <ul>
+                <li><a href=" ">首页</a ></li>
+                <li><a href="#services">业务范围</a ></li>
+                <li><a href="#about">关于我们</a ></li>
+                <li><a href="#contact">联系我们</a ></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner" id="home">
+        <h1>专业建筑资质代办，让企业高效拿证</h1>
+        <p>专注施工总承包、专业承包、勘察设计、电力承装等全品类资质服务，多年行业经验，高通过率，助力企业快速承接工程</p >
+        <a href="#contact" class="btn">免费咨询</a >
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">我们的业务</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>施工总承包资质</h3>
+                <p>房建、市政、公路、水利等总承包资质新办、升级、增项</p >
+            </div>
+            <div class="service-item">
+                <h3>专业承包资质</h3>
+                <p>消防、装修、机电、幕墙等专业承包资质一站式办理</p >
+            </div>
+            <div class="service-item">
+                <h3>施工劳务企业资质</h3>
+                <p>劳务资质新办、延续，保障企业合规经营</p >
+            </div>
+            <div class="service-item">
+                <h3>勘察设计资质</h3>
+                <p>工程勘察、工程设计各类资质申报服务</p >
+            </div>
+            <div class="service-item">
+                <h3>测绘资质</h3>
+                <p>测绘资质分级申报、升级咨询</p >
+            </div>
+            <div class="service-item">
+                <h3>承装(修、试)电力许可证</h3>
+                <p>电力承装、承修、承试许可证全流程代办</p >
+            </div>
+            <div class="service-item">
+                <h3>工程监理资质</h3>
+                <p>房屋建筑、市政公用等工程监理资质办理</p >
+            </div>
+            <di
